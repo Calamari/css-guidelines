@@ -137,7 +137,7 @@ For reference here is an anatomy of a rule set:
     ...
   }
   ```
-  
+
   **Bad**
   ```scss
   .error, .success {
@@ -145,7 +145,7 @@ For reference here is an anatomy of a rule set:
   }
   ```
 - Include a single space before the opening brace of a rule set.
-  
+
   **Good**
   ```scss
   .error,
@@ -153,7 +153,7 @@ For reference here is an anatomy of a rule set:
     ...
   }
   ```
-  
+
   **Bad**
   ```scss
   .error,
@@ -170,7 +170,7 @@ For reference here is an anatomy of a rule set:
     ...
   }
   ```
-  
+
   **Bad**
   ```scss
   .error,
@@ -186,7 +186,7 @@ For reference here is an anatomy of a rule set:
     padding: 0;
   }
   ```
-  
+
   **Bad**
   ```scss
   p {margin: 0; padding: 0;}
@@ -200,7 +200,7 @@ For reference here is an anatomy of a rule set:
     margin: 0;
   }
   ```
-  
+
   **Bad**
   ```scss
   .error {
@@ -222,7 +222,7 @@ For reference here is an anatomy of a rule set:
     margin: 0;
   }
   ```
-  
+
   **Bad**
   ```scss
   .error {
@@ -240,12 +240,12 @@ For reference here is an anatomy of a rule set:
   ```scss
   margin: 0;
   ```
-  **Bad** 
+  **Bad**
   ```scss
   margin:0;
   ```
 - Use lowercase and shorthand hex values.
-  
+
   **Good**
   ```scss
   #aaa
@@ -269,12 +269,12 @@ For reference here is an anatomy of a rule set:
     - `url()` e.g. `background: url("img/logo.png");`.
     - Attribute values in selectors e.g. `input[type="checkbox"]`.
 - Where allowed, avoid specifying units for zero-values.
-  
+
   **Good**
   ```scss
   margin: 0;
   ```
-  **Bad** 
+  **Bad**
   ```scss
   margin: 0px;
   ```
@@ -289,7 +289,7 @@ For reference here is an anatomy of a rule set:
   color: rgba(0,0,0,0.1);
   ```
 - Include a space before `!important` keyword.
-  
+
   **Good**
   ```scss
   padding: 10px !important;
@@ -299,7 +299,7 @@ For reference here is an anatomy of a rule set:
   padding: 10px!important;
   ```
 - Property values; `@extend`, `@include`, and `@import` directives; and variable declarations should always end with a semicolon.
-  
+
   **Good**
   ```scss
   color: #fff;
@@ -309,14 +309,14 @@ For reference here is an anatomy of a rule set:
   color: #fff
   ```
 - Parentheses should not be padded with spaces.
-  
+
   **Good**
   ```scss
-  @include box-shadow(0 2px 2px rgba(0, 0, 0, .2));
+  @include box-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
   ```
   **Bad**
   ```scss
-  @include box-shadow( 0 2px 2px rgba( 0, 0, 0, .2 ) );
+  @include box-shadow( 0 2px 2px rgba( 0, 0, 0, 0.2 ) );
   ```
 - When a decimal mark is needed always include the zero.
 
@@ -338,15 +338,15 @@ For reference here is an anatomy of a rule set:
   ```scss
   margin: 0.500em;
   ```
-- `url`s should not contain protocols or domain names. 
- 
+- `url`s should not contain protocols or domain names.
+
   **Good**
   ```scss
-  background: url('assets/image.png');
+  background: url("assets/image.png");
   ```
   **Bad**
   ```scss
-  background: url('https://example.com/assets/image.png');
+  background: url("https://example.com/assets/image.png");
   ```
 
 ### Declaration order
